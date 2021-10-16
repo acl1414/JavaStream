@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Test2 {
+public class Test3 {
 	
 	public static void main(String[] args) {
 		
-		Test2 test = new Test2();
+		Test3 test = new Test3();
 		test.init();
 		
 	}
@@ -32,10 +32,15 @@ public class Test2 {
 		      .stream() // (1)  return a Stream
 		      .filter(emp -> emp.getSalary() > 1000f) // (2)  return a new Stream
 		  	  .sorted()   // (4)  return a new Stream
-		      .forEach(System.out::println); // (5)
+		      .forEach(emp -> displayEmploye(emp)); 
 		
 	}
 	
-
+	
+	private void displayEmploye(Employee e)
+	{
+		System.out.println("Nom employe="+e.getName());
+		
+	}
 
 }

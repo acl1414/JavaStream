@@ -14,9 +14,14 @@ public class Test1 {
 	
 	private void init() {
 		
-		List<String> myList = Arrays.asList("a1", "a2", "b1", "c2", "c1");
-
+		List<String> myList = Arrays.asList("a1", "a2", "b1", "c2", "c1");	
 		
+		/*
+		 * Le code ci-dessous va :
+		 *  - filtrer les string (seulement ceux qui commencent par 'c'
+		 *  - trier les string
+		 *  - les afficher
+		 */
 	     
 		myList
 		      .stream() // (1)  return a Stream
